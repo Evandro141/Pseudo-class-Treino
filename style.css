@@ -1,0 +1,59 @@
+/* Anatomia de Uma Pseudo-class
+seletor:pseudo-class {
+    propriedade: valor
+} */
+
+
+/* Estilizando o Primeiro Elemento de Uma Tag Pai  */
+p:first-child {
+    background-color: aqua;
+}
+
+
+/* Estilizando o Ultimo Elemento de Uma Tag Pai  */
+p:last-child {
+    background-color: yellow;
+}
+
+/* Pseudo-class de Negação  */
+p:not(.negar) {
+    background-color: green;
+}
+
+
+/* nth-child = Estilizando Elementos de Acordo com Sua Posição na Tabela  */
+
+/* nth-child (odd) = Estilizando Elementos ímpares  */
+.elemento li:nth-child(odd) {
+    background-color: green;
+}
+
+/* nth-child (even) = Estilizando Elementos Pares  */
+.par li:nth-child(even) {
+    background-color: red;
+}
+
+
+/* nth-child (3n) = Estilizando os Elementos de Uma Tabela de Três em Três  */
+.tres li:nth-child(3n) {
+    background-color: blue;
+}
+
+
+/* nth-child (2) = Estilizando os Elementos de Uma Tabela de Acordo com Sua Posição Especifica  */
+
+.posicao li:nth-child(6) {
+    background-color: yellow;
+}
+
+
+/* nth-child = Estilizando os Elementos de Uma Tabela em Um Ranger  */
+.ranger li:nth-child(n+2):nth-child(-n+5) {
+    background-color: blueviolet;
+}
+
+
+/* nth-last-child = Estilizando Os Elementos de Uma Tabela de Baixo Pra Cima  */
+.cima li:nth-last-child(6) {
+    background-color: red;
+}
