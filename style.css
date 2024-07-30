@@ -57,3 +57,8 @@ p:not(.negar) {
 .cima li:nth-last-child(6) {
     background-color: red;
 }
+
+/* Adicionando cor aos Meus Títulos  */
+h1 {
+    background-color: chartreuse;
+}
